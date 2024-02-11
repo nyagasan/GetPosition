@@ -17,7 +17,7 @@ struct ContentView: View {
         VStack {
             RealityView { content in
                 // Add the initial RealityKit content
-                if let scene = try? await Entity(named: "Scene", in: realityKitContentBundle) {
+                if let scene = try? await Entity(named: "Neptune", in: realityKitContentBundle) {
                     content.add(scene)
                 }
             } update: { content in
@@ -39,6 +39,6 @@ struct ContentView: View {
     }
 }
 
-#Preview(windowStyle: .volumetric) {
+#Preview {
     ContentView()
 }
