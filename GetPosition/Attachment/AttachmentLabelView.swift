@@ -37,7 +37,6 @@ struct AttachmentLabelView: View {
                             .bold()
                     }
                     .glassBackgroundEffect()
-                    .tag(textModel.id)
                 }
             }
         }.gesture(
