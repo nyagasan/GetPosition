@@ -3,8 +3,7 @@
     "objectMetadataList" : [
       [
         "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
-        "Root",
-        "Sphere"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -12,7 +11,8 @@
       },
       [
         "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
-        "Root"
+        "Root",
+        "Sphere"
       ],
       {
         "isExpanded" : true,
@@ -24,6 +24,72 @@
     "objectMetadataList" : [
       [
         "2E3FBEA6-3AAB-4F99-8DB5-7F3FFA7B6878",
+        "Root",
+        "Neptune",
+        "geom",
+        "realistic",
+        "geo"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2E3FBEA6-3AAB-4F99-8DB5-7F3FFA7B6878",
+        "Root",
+        "Neptune",
+        "geom",
+        "realistic"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2E3FBEA6-3AAB-4F99-8DB5-7F3FFA7B6878",
+        "Root",
+        "Neptune",
+        "geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2E3FBEA6-3AAB-4F99-8DB5-7F3FFA7B6878",
+        "Root",
+        "Neptune"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2E3FBEA6-3AAB-4F99-8DB5-7F3FFA7B6878",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2E3FBEA6-3AAB-4F99-8DB5-7F3FFA7B6878",
+        "Root",
+        "Neptune",
+        "geom",
+        "realistic",
+        "materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "6CB15529-E694-417E-8625-47DDFA29EB56" : {
+    "objectMetadataList" : [
+      [
+        "6CB15529-E694-417E-8625-47DDFA29EB56",
         "Root"
       ],
       {

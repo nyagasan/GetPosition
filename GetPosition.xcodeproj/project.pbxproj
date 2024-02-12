@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EB6080A92B79B9260092D51E /* Neptune.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EB6080A82B79B9260092D51E /* Neptune.usdz */; };
+		EB6080AB2B79D0310092D51E /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080AA2B79D0310092D51E /* DragGestureView.swift */; };
+		EB6080AD2B79D0870092D51E /* HoverEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080AC2B79D0870092D51E /* HoverEffectView.swift */; };
+		EB6080B02B79FA810092D51E /* ModelHoverEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080AF2B79FA810092D51E /* ModelHoverEffectView.swift */; };
+		EB6080B22B79FB780092D51E /* Earth.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EB6080B12B79FB780092D51E /* Earth.usdz */; };
 		EBD67BBB2B78B8EB006C3886 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EBD67BBA2B78B8EB006C3886 /* RealityKitContent */; };
 		EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */; };
 		EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBE2B78B8EB006C3886 /* ContentView.swift */; };
@@ -17,7 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB6080A82B79B9260092D51E /* Neptune.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Neptune.usdz; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/Neptune.usdz; sourceTree = SOURCE_ROOT; };
+		EB6080A82B79B9260092D51E /* Neptune.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Neptune.usdz; path = GetPosition/Assets/Neptune.usdz; sourceTree = SOURCE_ROOT; };
+		EB6080AA2B79D0310092D51E /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
+		EB6080AC2B79D0870092D51E /* HoverEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverEffectView.swift; sourceTree = "<group>"; };
+		EB6080AF2B79FA810092D51E /* ModelHoverEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHoverEffectView.swift; sourceTree = "<group>"; };
+		EB6080B12B79FB780092D51E /* Earth.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Earth.usdz; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/Earth.usdz; sourceTree = SOURCE_ROOT; };
 		EBD67BB52B78B8EB006C3886 /* GetPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD67BB92B78B8EB006C3886 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPositionApp.swift; sourceTree = "<group>"; };
@@ -40,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB6080AE2B79F8210092D51E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EB6080B12B79FB780092D51E /* Earth.usdz */,
+				EB6080A82B79B9260092D51E /* Neptune.usdz */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		EBD67BAC2B78B8EB006C3886 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +77,13 @@
 		EBD67BB72B78B8EB006C3886 /* GetPosition */ = {
 			isa = PBXGroup;
 			children = (
-				EB6080A82B79B9260092D51E /* Neptune.usdz */,
+				EB6080AE2B79F8210092D51E /* Assets */,
 				EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */,
+				EB6080AA2B79D0310092D51E /* DragGestureView.swift */,
 				EBD67BBE2B78B8EB006C3886 /* ContentView.swift */,
+				EB6080AC2B79D0870092D51E /* HoverEffectView.swift */,
 				EBD67BCB2B78BA0C006C3886 /* GetPointView.swift */,
+				EB6080AF2B79FA810092D51E /* ModelHoverEffectView.swift */,
 				EBD67BC02B78B8EC006C3886 /* Assets.xcassets */,
 				EBD67BC52B78B8EC006C3886 /* Info.plist */,
 				EBD67BC22B78B8EC006C3886 /* Preview Content */,
@@ -150,6 +170,7 @@
 			files = (
 				EBD67BC42B78B8EC006C3886 /* Preview Assets.xcassets in Resources */,
 				EBD67BC12B78B8EC006C3886 /* Assets.xcassets in Resources */,
+				EB6080B22B79FB780092D51E /* Earth.usdz in Resources */,
 				EB6080A92B79B9260092D51E /* Neptune.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6080AB2B79D0310092D51E /* DragGestureView.swift in Sources */,
+				EB6080AD2B79D0870092D51E /* HoverEffectView.swift in Sources */,
+				EB6080B02B79FA810092D51E /* ModelHoverEffectView.swift in Sources */,
 				EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */,
 				EBD67BCC2B78BA0C006C3886 /* GetPointView.swift in Sources */,
 				EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */,
