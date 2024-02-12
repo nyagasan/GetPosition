@@ -31,11 +31,14 @@ struct AttachmentLabelView: View {
             ForEach(textModelList) { textModel in
                 Attachment(id: textModel.id) {
                     VStack {
+                        Image(systemName: "visionpro")
+                            .imageScale(.large)
                         Text(textModel.text)
-                            .padding(.all, 10)
                             .font(.system(size: 32.0))
                             .bold()
+                        Text("Vision Pro Challenge")
                     }
+                    .padding(.all, 15)
                     .glassBackgroundEffect()
                 }
             }
