@@ -9,7 +9,7 @@ struct SakaosanView: View {
     var body: some View {
         // テクスチャが表示されなかった
         RealityView { content in
-            if let entity = try? await ModelEntity(named: "Sakaosan_2023.usdz") {
+            if let entity = try? await ModelEntity(named: "Sakaosan.usdz") {
                 content.add(entity)
                 entity.scale = [0.1,0.1,0.1]
                 entity.position = [0, -0.05, 0]

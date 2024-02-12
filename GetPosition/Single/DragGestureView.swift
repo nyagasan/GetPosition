@@ -20,8 +20,9 @@ struct DragGestureView: View {
             box.components.set(InputTargetComponent())
             content.add(box)
         }
-        .gesture(rotate)
-        .rotation3DEffect(rotation)
+//        .gesture(rotate)
+//        .rotation3DEffect(rotation)
+        .dragRotation()
     }
 }
 
