@@ -11,7 +11,7 @@ import SwiftUI
 struct GetPositionApp: App {
     var body: some Scene {
         WindowGroup {
-            GetPointView()
+            ModelDragGestureView()
         }
         .windowStyle(.volumetric)
         .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
