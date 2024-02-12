@@ -17,6 +17,8 @@
 		EB6080BA2B7A0A8B0092D51E /* Sakaosan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EB6080B92B7A0A8B0092D51E /* Sakaosan.usdz */; };
 		EB6080BC2B7A0C1B0092D51E /* Sakaosan_2023.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EB6080BB2B7A0C1B0092D51E /* Sakaosan_2023.usdz */; };
 		EB6080BE2B7A0DF80092D51E /* ModelDragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080BD2B7A0DF80092D51E /* ModelDragGestureView.swift */; };
+		EB6080C22B7A151E0092D51E /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080C12B7A151E0092D51E /* TextModel.swift */; };
+		EB6080C42B7A15320092D51E /* AttachmentLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080C32B7A15320092D51E /* AttachmentLabelView.swift */; };
 		EBD67BBB2B78B8EB006C3886 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EBD67BBA2B78B8EB006C3886 /* RealityKitContent */; };
 		EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */; };
 		EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBE2B78B8EB006C3886 /* ContentView.swift */; };
@@ -36,6 +38,8 @@
 		EB6080B92B7A0A8B0092D51E /* Sakaosan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Sakaosan.usdz; sourceTree = "<group>"; };
 		EB6080BB2B7A0C1B0092D51E /* Sakaosan_2023.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Sakaosan_2023.usdz; sourceTree = "<group>"; };
 		EB6080BD2B7A0DF80092D51E /* ModelDragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDragGestureView.swift; sourceTree = "<group>"; };
+		EB6080C12B7A151E0092D51E /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
+		EB6080C32B7A15320092D51E /* AttachmentLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentLabelView.swift; sourceTree = "<group>"; };
 		EBD67BB52B78B8EB006C3886 /* GetPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD67BB92B78B8EB006C3886 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPositionApp.swift; sourceTree = "<group>"; };
@@ -69,6 +73,29 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		EB6080BF2B7A14B20092D51E /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				EB6080AA2B79D0310092D51E /* DragGestureView.swift */,
+				EB6080AC2B79D0870092D51E /* HoverEffectView.swift */,
+				EBD67BCB2B78BA0C006C3886 /* GetPointView.swift */,
+				EB6080B32B7A052C0092D51E /* ChangeModelSize.swift */,
+				EB6080B52B7A07A80092D51E /* SakaosanView.swift */,
+				EB6080AF2B79FA810092D51E /* ModelHoverEffectView.swift */,
+				EB6080BD2B7A0DF80092D51E /* ModelDragGestureView.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		EB6080C02B7A14E50092D51E /* Attachment */ = {
+			isa = PBXGroup;
+			children = (
+				EB6080C12B7A151E0092D51E /* TextModel.swift */,
+				EB6080C32B7A15320092D51E /* AttachmentLabelView.swift */,
+			);
+			path = Attachment;
+			sourceTree = "<group>";
+		};
 		EBD67BAC2B78B8EB006C3886 = {
 			isa = PBXGroup;
 			children = (
@@ -90,15 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */,
-				EB6080AE2B79F8210092D51E /* Assets */,
-				EB6080AA2B79D0310092D51E /* DragGestureView.swift */,
 				EBD67BBE2B78B8EB006C3886 /* ContentView.swift */,
-				EB6080AC2B79D0870092D51E /* HoverEffectView.swift */,
-				EBD67BCB2B78BA0C006C3886 /* GetPointView.swift */,
-				EB6080B32B7A052C0092D51E /* ChangeModelSize.swift */,
-				EB6080B52B7A07A80092D51E /* SakaosanView.swift */,
-				EB6080AF2B79FA810092D51E /* ModelHoverEffectView.swift */,
-				EB6080BD2B7A0DF80092D51E /* ModelDragGestureView.swift */,
+				EB6080C02B7A14E50092D51E /* Attachment */,
+				EB6080BF2B7A14B20092D51E /* Single */,
+				EB6080AE2B79F8210092D51E /* Assets */,
 				EBD67BC02B78B8EC006C3886 /* Assets.xcassets */,
 				EBD67BC52B78B8EC006C3886 /* Info.plist */,
 				EBD67BC22B78B8EC006C3886 /* Preview Content */,
@@ -199,12 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6080C42B7A15320092D51E /* AttachmentLabelView.swift in Sources */,
 				EB6080BE2B7A0DF80092D51E /* ModelDragGestureView.swift in Sources */,
 				EB6080AB2B79D0310092D51E /* DragGestureView.swift in Sources */,
 				EB6080B62B7A07A80092D51E /* SakaosanView.swift in Sources */,
 				EB6080AD2B79D0870092D51E /* HoverEffectView.swift in Sources */,
 				EB6080B02B79FA810092D51E /* ModelHoverEffectView.swift in Sources */,
 				EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */,
+				EB6080C22B7A151E0092D51E /* TextModel.swift in Sources */,
 				EBD67BCC2B78BA0C006C3886 /* GetPointView.swift in Sources */,
 				EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */,
 				EB6080B42B7A052C0092D51E /* ChangeModelSize.swift in Sources */,
