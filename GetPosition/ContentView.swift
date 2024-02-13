@@ -1,17 +1,15 @@
-//
-//  ContentView.swift
-//  GetPosition
-//
-//  Created by Owner on 2024/02/11.
-//
-
 import SwiftUI
 import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
 
-    @State var enlarge = false
+    @State private var enlarge = false
+    @State private var showImmersiveSpace = false
+    @State private var immersiveSpaceIsShown = false
+
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
         VStack {
@@ -31,14 +29,39 @@ struct ContentView: View {
                 enlarge.toggle()
             })
 
-            VStack {
+            VStack (spacing: 12) {
                 Toggle("Enlarge RealityView Content", isOn: $enlarge)
-                    .toggleStyle(.button)
-            }.padding().glassBackgroundEffect()
+                    .font(.title)
+
+                Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
+                    .font(.title)
+            }
+            .frame(width: 360)
+            .padding(36)
+            .glassBackgroundEffect()
+
+        }
+        .onChange(of: showImmersiveSpace) { _, newValue in
+            Task {
+                if newValue {
+                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
+                    case .opened:
+                        immersiveSpaceIsShown = true
+                    case .error, .userCancelled:
+                        fallthrough
+                    @unknown default:
+                        immersiveSpaceIsShown = false
+                        showImmersiveSpace = false
+                    }
+                } else if immersiveSpaceIsShown {
+                    await dismissImmersiveSpace()
+                    immersiveSpaceIsShown = false
+                }
+            }
         }
     }
 }
 
-#Preview {
+#Preview(windowStyle: .volumetric) {
     ContentView()
 }
