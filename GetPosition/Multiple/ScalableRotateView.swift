@@ -10,7 +10,7 @@ struct ScalableRotateView: View {
     
     var body: some View {
         RealityView { content in
-            if let entity = try? await ModelEntity(named: "Earth.usdz") {
+            if let entity = try? await ModelEntity(named: "Neptune.usdz") {
                 content.add(entity)
                 entity.scale = [1,1,1]
                 let bounds = entity.model!.mesh.bounds.extents
@@ -44,7 +44,6 @@ struct ScalableRotateView: View {
             }
     }
 }
-
 #Preview {
     ScalableRotateView()
 }

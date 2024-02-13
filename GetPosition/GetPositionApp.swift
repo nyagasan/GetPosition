@@ -11,7 +11,7 @@ import SwiftUI
 struct GetPositionApp: App {
     var body: some Scene {
         WindowGroup {
-            ScalableRotateView()
+            AttachmentLabelView()
         }
         .windowStyle(.volumetric)
         .defaultSize(width: 2, height: 2, depth: 2, in: .meters)
