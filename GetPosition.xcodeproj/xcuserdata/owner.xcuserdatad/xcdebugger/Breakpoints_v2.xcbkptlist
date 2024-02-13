@@ -3,4 +3,69 @@
    uuid = "2EF994DC-3E10-421A-B22B-996B02064038"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DCB2E29-6FDC-4D7D-8D9D-C238FB2ADCB5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GetPosition/AttachmentAbove/AttachmentOrbitView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "2DCB2E29-6FDC-4D7D-8D9D-C238FB2ADCB5 - 8cce46e637408241"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GetPosition.AttachmentOrbitView.body.getter : some"
+                  moduleName = "GetPosition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/owner/dev/GetPosition/GetPosition/AttachmentAbove/AttachmentOrbitView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "1696">
+               </Location>
+               <Location
+                  uuid = "2DCB2E29-6FDC-4D7D-8D9D-C238FB2ADCB5 - 8cce46e63740833d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GetPosition.AttachmentOrbitView.body.getter : some"
+                  moduleName = "GetPosition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/owner/dev/GetPosition/GetPosition/AttachmentAbove/AttachmentOrbitView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "1612">
+               </Location>
+               <Location
+                  uuid = "2DCB2E29-6FDC-4D7D-8D9D-C238FB2ADCB5 - 8cce46e637408592"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GetPosition.AttachmentOrbitView.body.getter : some"
+                  moduleName = "GetPosition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/owner/dev/GetPosition/GetPosition/AttachmentAbove/AttachmentOrbitView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "2228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
