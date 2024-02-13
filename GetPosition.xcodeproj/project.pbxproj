@@ -24,6 +24,11 @@
 		EB6080CB2B7A8EBD0092D51E /* DragMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080CA2B7A8EBD0092D51E /* DragMoveView.swift */; };
 		EB6080CD2B7B05A80092D51E /* MagnifyGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080CC2B7B05A80092D51E /* MagnifyGestureView.swift */; };
 		EB6080D02B7B18E80092D51E /* ScalableRotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080CF2B7B18E80092D51E /* ScalableRotateView.swift */; };
+		EB60813A2B7B71B10092D51E /* AttachmentOrbitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6081392B7B71B10092D51E /* AttachmentOrbitView.swift */; };
+		EB60813C2B7B71E00092D51E /* OrbitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB60813B2B7B71E00092D51E /* OrbitCard.swift */; };
+		EB92007B2B7B73AE002243B9 /* BillboardSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92007A2B7B73AE002243B9 /* BillboardSystem.swift */; };
+		EB92007D2B7B75AB002243B9 /* BillboardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92007C2B7B75AB002243B9 /* BillboardComponent.swift */; };
+		EB92007F2B7B7E4B002243B9 /* BillboardTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92007E2B7B7E4B002243B9 /* BillboardTestView.swift */; };
 		EBD67BBB2B78B8EB006C3886 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EBD67BBA2B78B8EB006C3886 /* RealityKitContent */; };
 		EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */; };
 		EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBE2B78B8EB006C3886 /* ContentView.swift */; };
@@ -50,6 +55,11 @@
 		EB6080CA2B7A8EBD0092D51E /* DragMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragMoveView.swift; sourceTree = "<group>"; };
 		EB6080CC2B7B05A80092D51E /* MagnifyGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyGestureView.swift; sourceTree = "<group>"; };
 		EB6080CF2B7B18E80092D51E /* ScalableRotateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalableRotateView.swift; sourceTree = "<group>"; };
+		EB6081392B7B71B10092D51E /* AttachmentOrbitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentOrbitView.swift; sourceTree = "<group>"; };
+		EB60813B2B7B71E00092D51E /* OrbitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitCard.swift; sourceTree = "<group>"; };
+		EB92007A2B7B73AE002243B9 /* BillboardSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardSystem.swift; sourceTree = "<group>"; };
+		EB92007C2B7B75AB002243B9 /* BillboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardComponent.swift; sourceTree = "<group>"; };
+		EB92007E2B7B7E4B002243B9 /* BillboardTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardTestView.swift; sourceTree = "<group>"; };
 		EBD67BB52B78B8EB006C3886 /* GetPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD67BB92B78B8EB006C3886 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPositionApp.swift; sourceTree = "<group>"; };
@@ -126,6 +136,18 @@
 			path = Multiple;
 			sourceTree = "<group>";
 		};
+		EB6081382B7B71610092D51E /* AttachmentAbove */ = {
+			isa = PBXGroup;
+			children = (
+				EB6081392B7B71B10092D51E /* AttachmentOrbitView.swift */,
+				EB60813B2B7B71E00092D51E /* OrbitCard.swift */,
+				EB92007A2B7B73AE002243B9 /* BillboardSystem.swift */,
+				EB92007C2B7B75AB002243B9 /* BillboardComponent.swift */,
+				EB92007E2B7B7E4B002243B9 /* BillboardTestView.swift */,
+			);
+			path = AttachmentAbove;
+			sourceTree = "<group>";
+		};
 		EBD67BAC2B78B8EB006C3886 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +170,7 @@
 			children = (
 				EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */,
 				EBD67BBE2B78B8EB006C3886 /* ContentView.swift */,
+				EB6081382B7B71610092D51E /* AttachmentAbove */,
 				EB6080C02B7A14E50092D51E /* Attachment */,
 				EB6080CE2B7B18B70092D51E /* Multiple */,
 				EB6080BF2B7A14B20092D51E /* Single */,
@@ -263,9 +286,14 @@
 				EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */,
 				EB6080C22B7A151E0092D51E /* TextModel.swift in Sources */,
 				EB6080CB2B7A8EBD0092D51E /* DragMoveView.swift in Sources */,
+				EB60813A2B7B71B10092D51E /* AttachmentOrbitView.swift in Sources */,
+				EB92007B2B7B73AE002243B9 /* BillboardSystem.swift in Sources */,
+				EB92007D2B7B75AB002243B9 /* BillboardComponent.swift in Sources */,
+				EB60813C2B7B71E00092D51E /* OrbitCard.swift in Sources */,
 				EBD67BCC2B78BA0C006C3886 /* GetPointView.swift in Sources */,
 				EB6080CD2B7B05A80092D51E /* MagnifyGestureView.swift in Sources */,
 				EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */,
+				EB92007F2B7B7E4B002243B9 /* BillboardTestView.swift in Sources */,
 				EB6080B42B7A052C0092D51E /* ChangeModelSize.swift in Sources */,
 				EB6080C92B7A7AE50092D51E /* LearnMoreView.swift in Sources */,
 			);

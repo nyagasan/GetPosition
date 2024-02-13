@@ -11,10 +11,10 @@ import SwiftUI
 struct GetPositionApp: App {
     var body: some Scene {
         WindowGroup {
-            AttachmentLabelView()
+            AttachmentOrbitView()
         }
         .windowStyle(.volumetric)
-        .defaultSize(width: 2, height: 2, depth: 2, in: .meters)
+        .defaultSize(width: 1.3, height: 1.3, depth: 1.3, in: .meters)
         
     }
 }

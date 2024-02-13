@@ -1,7 +1,7 @@
 import SwiftUI
 import RealityKit
 
-struct AttachmentLabelView: View {
+struct AttachmentOrbitView: View {
     @State var textModelList: [TextModel] = []
     @State var earthEntity: ModelEntity = ModelEntity()
     @State var count: Int = 0
@@ -11,7 +11,7 @@ struct AttachmentLabelView: View {
             if let entity = try? await ModelEntity(named: "Earth.usdz") {
                 content.add(entity)
                 entity.scale = [1,1,1]
-                let bounds = entity.model!.mesh.bounds.extents
+                let _bounds = entity.model!.mesh.bounds.extents
                 let visualBoundsSize = entity.visualBounds(relativeTo: nil).size
                 let targetSize: Float = 0.6
                 let scale = targetSize / visualBoundsSize.x // ここでは幅を基準にしている
@@ -22,28 +22,24 @@ struct AttachmentLabelView: View {
             }
         } update: { content, attachments in
             for textModel in textModelList {
-                if let text = attachments.entity(for: textModel.id) {
-                    content.add(text)
-                    text.look(at: .zero, from: textModel.location, relativeTo: text.parent)
+                
+                BillboardSystem.registerSystem()
+                BillboardComponent.registerComponent()
+                
+                if let cardEntity = attachments.entity(for: textModel.id) {
+                    
+                    let billboardComponent = BillboardComponent()
+                    cardEntity.components[BillboardComponent.self] = billboardComponent
+                    
+                    content.add(cardEntity)
+                    cardEntity.look(at: .zero, from: textModel.location, relativeTo: cardEntity.parent)
                 }
             }
         } attachments: {
             ForEach(textModelList) { textModel in
                 Attachment(id: textModel.id) {
-//                    VStack {
-//                        Image(systemName: "visionpro")
-//                            .imageScale(.large)
-//                        Text(textModel.text)
-//                            .font(.system(size: 32.0))
-//                            .bold()
-//                        Text("Vision Pro Challenge")
-//                    }
-//                    .padding(.all, 15)
-//                    .glassBackgroundEffect()
-                    LearnMoreView(name: textModel.text,
-                                  description: textModel.descreption,
-                                  imageNames: [""],
-                                  trail: nil
+                    OrbitCard(name: textModel.text,
+                                  description: textModel.descreption
                                   )
                 }
             }
@@ -52,7 +48,7 @@ struct AttachmentLabelView: View {
                 .targetedToEntity(earthEntity)
                 .onEnded { value in
                     let location = value.location3D
-                    let convertedLocation = 1.05 * value.convert(location, from: .local, to: .scene)
+                    let convertedLocation = 2 * value.convert(location, from: .local, to: .scene)
                     textModelList.append(TextModel(text: "Earth:\(count)",location: convertedLocation))
                     count = count + 1
             }
@@ -63,7 +59,6 @@ struct AttachmentLabelView: View {
     }
 }
 
-#Preview() {
-    AttachmentLabelView()
-    
+#Preview {
+    AttachmentOrbitView()
 }
