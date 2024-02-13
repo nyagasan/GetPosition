@@ -23,6 +23,7 @@
 		EB6080C92B7A7AE50092D51E /* LearnMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080C82B7A7AE50092D51E /* LearnMoreView.swift */; };
 		EB6080CB2B7A8EBD0092D51E /* DragMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080CA2B7A8EBD0092D51E /* DragMoveView.swift */; };
 		EB6080CD2B7B05A80092D51E /* MagnifyGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080CC2B7B05A80092D51E /* MagnifyGestureView.swift */; };
+		EB6080D02B7B18E80092D51E /* ScalableRotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080CF2B7B18E80092D51E /* ScalableRotateView.swift */; };
 		EBD67BBB2B78B8EB006C3886 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EBD67BBA2B78B8EB006C3886 /* RealityKitContent */; };
 		EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */; };
 		EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBE2B78B8EB006C3886 /* ContentView.swift */; };
@@ -48,6 +49,7 @@
 		EB6080C82B7A7AE50092D51E /* LearnMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreView.swift; sourceTree = "<group>"; };
 		EB6080CA2B7A8EBD0092D51E /* DragMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragMoveView.swift; sourceTree = "<group>"; };
 		EB6080CC2B7B05A80092D51E /* MagnifyGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyGestureView.swift; sourceTree = "<group>"; };
+		EB6080CF2B7B18E80092D51E /* ScalableRotateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalableRotateView.swift; sourceTree = "<group>"; };
 		EBD67BB52B78B8EB006C3886 /* GetPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD67BB92B78B8EB006C3886 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPositionApp.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 			path = Modifier;
 			sourceTree = "<group>";
 		};
+		EB6080CE2B7B18B70092D51E /* Multiple */ = {
+			isa = PBXGroup;
+			children = (
+				EB6080CF2B7B18E80092D51E /* ScalableRotateView.swift */,
+			);
+			path = Multiple;
+			sourceTree = "<group>";
+		};
 		EBD67BAC2B78B8EB006C3886 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 				EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */,
 				EBD67BBE2B78B8EB006C3886 /* ContentView.swift */,
 				EB6080C02B7A14E50092D51E /* Attachment */,
+				EB6080CE2B7B18B70092D51E /* Multiple */,
 				EB6080BF2B7A14B20092D51E /* Single */,
 				EB6080AE2B79F8210092D51E /* Assets */,
 				EBD67BC02B78B8EC006C3886 /* Assets.xcassets */,
@@ -245,6 +256,7 @@
 				EB6080BE2B7A0DF80092D51E /* ModelDragGestureView.swift in Sources */,
 				EB6080AB2B79D0310092D51E /* DragGestureView.swift in Sources */,
 				EB6080B62B7A07A80092D51E /* SakaosanView.swift in Sources */,
+				EB6080D02B7B18E80092D51E /* ScalableRotateView.swift in Sources */,
 				EB6080AD2B79D0870092D51E /* HoverEffectView.swift in Sources */,
 				EB6080B02B79FA810092D51E /* ModelHoverEffectView.swift in Sources */,
 				EB6080C72B7A76C70092D51E /* DragRotationModifier.swift in Sources */,

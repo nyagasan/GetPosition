@@ -60,7 +60,7 @@ struct AttachmentLabelView: View {
         .dragRotation(
             pitchLimit: .degrees(90)
         )
-        .gesture(dragGesture)
+//        .gesture(dragGesture)
     }
     
     var dragGesture: some Gesture {
