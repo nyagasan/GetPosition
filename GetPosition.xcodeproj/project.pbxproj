@@ -20,6 +20,9 @@
 		EB6080C22B7A151E0092D51E /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080C12B7A151E0092D51E /* TextModel.swift */; };
 		EB6080C42B7A15320092D51E /* AttachmentLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080C32B7A15320092D51E /* AttachmentLabelView.swift */; };
 		EB6080C72B7A76C70092D51E /* DragRotationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080C62B7A76C70092D51E /* DragRotationModifier.swift */; };
+		EB6080C92B7A7AE50092D51E /* LearnMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080C82B7A7AE50092D51E /* LearnMoreView.swift */; };
+		EB6080CB2B7A8EBD0092D51E /* DragMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080CA2B7A8EBD0092D51E /* DragMoveView.swift */; };
+		EB6080CD2B7B05A80092D51E /* MagnifyGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080CC2B7B05A80092D51E /* MagnifyGestureView.swift */; };
 		EBD67BBB2B78B8EB006C3886 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EBD67BBA2B78B8EB006C3886 /* RealityKitContent */; };
 		EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */; };
 		EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBE2B78B8EB006C3886 /* ContentView.swift */; };
@@ -42,6 +45,9 @@
 		EB6080C12B7A151E0092D51E /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
 		EB6080C32B7A15320092D51E /* AttachmentLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentLabelView.swift; sourceTree = "<group>"; };
 		EB6080C62B7A76C70092D51E /* DragRotationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragRotationModifier.swift; sourceTree = "<group>"; };
+		EB6080C82B7A7AE50092D51E /* LearnMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreView.swift; sourceTree = "<group>"; };
+		EB6080CA2B7A8EBD0092D51E /* DragMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragMoveView.swift; sourceTree = "<group>"; };
+		EB6080CC2B7B05A80092D51E /* MagnifyGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyGestureView.swift; sourceTree = "<group>"; };
 		EBD67BB52B78B8EB006C3886 /* GetPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD67BB92B78B8EB006C3886 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPositionApp.swift; sourceTree = "<group>"; };
@@ -82,9 +88,11 @@
 				EB6080AC2B79D0870092D51E /* HoverEffectView.swift */,
 				EBD67BCB2B78BA0C006C3886 /* GetPointView.swift */,
 				EB6080B32B7A052C0092D51E /* ChangeModelSize.swift */,
+				EB6080CC2B7B05A80092D51E /* MagnifyGestureView.swift */,
 				EB6080B52B7A07A80092D51E /* SakaosanView.swift */,
 				EB6080AF2B79FA810092D51E /* ModelHoverEffectView.swift */,
 				EB6080BD2B7A0DF80092D51E /* ModelDragGestureView.swift */,
+				EB6080CA2B7A8EBD0092D51E /* DragMoveView.swift */,
 			);
 			path = Single;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 			children = (
 				EB6080C12B7A151E0092D51E /* TextModel.swift */,
 				EB6080C32B7A15320092D51E /* AttachmentLabelView.swift */,
+				EB6080C82B7A7AE50092D51E /* LearnMoreView.swift */,
 				EB6080C52B7A76AC0092D51E /* Modifier */,
 			);
 			path = Attachment;
@@ -241,9 +250,12 @@
 				EB6080C72B7A76C70092D51E /* DragRotationModifier.swift in Sources */,
 				EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */,
 				EB6080C22B7A151E0092D51E /* TextModel.swift in Sources */,
+				EB6080CB2B7A8EBD0092D51E /* DragMoveView.swift in Sources */,
 				EBD67BCC2B78BA0C006C3886 /* GetPointView.swift in Sources */,
+				EB6080CD2B7B05A80092D51E /* MagnifyGestureView.swift in Sources */,
 				EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */,
 				EB6080B42B7A052C0092D51E /* ChangeModelSize.swift in Sources */,
+				EB6080C92B7A7AE50092D51E /* LearnMoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

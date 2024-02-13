@@ -30,16 +30,21 @@ struct AttachmentLabelView: View {
         } attachments: {
             ForEach(textModelList) { textModel in
                 Attachment(id: textModel.id) {
-                    VStack {
-                        Image(systemName: "visionpro")
-                            .imageScale(.large)
-                        Text(textModel.text)
-                            .font(.system(size: 32.0))
-                            .bold()
-                        Text("Vision Pro Challenge")
-                    }
-                    .padding(.all, 15)
-                    .glassBackgroundEffect()
+//                    VStack {
+//                        Image(systemName: "visionpro")
+//                            .imageScale(.large)
+//                        Text(textModel.text)
+//                            .font(.system(size: 32.0))
+//                            .bold()
+//                        Text("Vision Pro Challenge")
+//                    }
+//                    .padding(.all, 15)
+//                    .glassBackgroundEffect()
+                    LearnMoreView(name: textModel.text,
+                                  description: textModel.descreption,
+                                  imageNames: [""],
+                                  trail: nil
+                                  )
                 }
             }
         }.gesture(
@@ -52,9 +57,22 @@ struct AttachmentLabelView: View {
                     count = count + 1
             }
         )
+        .dragRotation(
+            pitchLimit: .degrees(90)
+        )
+        .gesture(dragGesture)
+    }
+    
+    var dragGesture: some Gesture {
+        DragGesture()
+            .targetedToAnyEntity()
+            .onChanged { value in
+                value.entity.position = value.convert(value.location3D, from: .local, to: value.entity.parent!)
+            }
     }
 }
 
-#Preview {
+#Preview() {
     AttachmentLabelView()
+    
 }
