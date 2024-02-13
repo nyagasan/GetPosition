@@ -5,6 +5,7 @@ import RealityKitContent
 struct ImmersiveView: View {
     var body: some View {
         AttachmentOrbitView()
+            
     }
 }
 

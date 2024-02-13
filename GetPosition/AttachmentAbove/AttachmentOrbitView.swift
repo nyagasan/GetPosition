@@ -18,7 +18,20 @@ struct AttachmentOrbitView: View {
                 entity.scale = SIMD3<Float>(repeating: scale)
                 entity.collision = try? await CollisionComponent(shapes: [ShapeResource.generateConvex(from: entity.model!.mesh)])
                 entity.components.set(InputTargetComponent())
+                
+//                entity.position = .init(x: 0.5, y: 1.5, z: -0.5)
+                
+                
+//                // 初期座標の設定
+//                let anchor = AnchorEntity(.head)
+//                anchor.anchoring.trackingMode = .once
+//                entity.setParent(anchor)
+//                entity.transform.translation.z = -0.75
+//                entity.transform.translation.y = 0.1
+//                
                 earthEntity = entity
+//                
+//                content.add(anchor)
             }
         } update: { content, attachments in
             for textModel in textModelList {
@@ -39,8 +52,8 @@ struct AttachmentOrbitView: View {
             ForEach(textModelList) { textModel in
                 Attachment(id: textModel.id) {
                     OrbitCard(name: textModel.text,
-                                  description: textModel.descreption
-                                  )
+                              description: textModel.descreption
+                    )
                 }
             }
         }.gesture(
@@ -48,10 +61,13 @@ struct AttachmentOrbitView: View {
                 .targetedToEntity(earthEntity)
                 .onEnded { value in
                     let location = value.location3D
+                    let attachedLocation = 2 * value.location3D
                     let convertedLocation = 2 * value.convert(location, from: .local, to: .scene)
                     textModelList.append(TextModel(text: "Earth:\(count)",location: convertedLocation))
                     count = count + 1
-            }
+                    print("ワイはここにおるで：球体の座標" ,location)
+                    print("ワイはここにおるで：付箋の座標" ,attachedLocation)
+                }
         )
         .dragRotation(
             pitchLimit: .degrees(90)

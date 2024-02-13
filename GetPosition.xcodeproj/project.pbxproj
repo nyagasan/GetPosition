@@ -30,6 +30,7 @@
 		EB92007D2B7B75AB002243B9 /* BillboardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92007C2B7B75AB002243B9 /* BillboardComponent.swift */; };
 		EB92007F2B7B7E4B002243B9 /* BillboardTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92007E2B7B7E4B002243B9 /* BillboardTestView.swift */; };
 		EB9200812B7B82DE002243B9 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9200802B7B82DE002243B9 /* ImmersiveView.swift */; };
+		EB9200832B7B93C3002243B9 /* PlacementGesturesModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9200822B7B93C3002243B9 /* PlacementGesturesModifier.swift */; };
 		EBD67BBB2B78B8EB006C3886 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EBD67BBA2B78B8EB006C3886 /* RealityKitContent */; };
 		EBD67BBD2B78B8EB006C3886 /* GetPositionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */; };
 		EBD67BBF2B78B8EB006C3886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67BBE2B78B8EB006C3886 /* ContentView.swift */; };
@@ -62,6 +63,7 @@
 		EB92007C2B7B75AB002243B9 /* BillboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardComponent.swift; sourceTree = "<group>"; };
 		EB92007E2B7B7E4B002243B9 /* BillboardTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardTestView.swift; sourceTree = "<group>"; };
 		EB9200802B7B82DE002243B9 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		EB9200822B7B93C3002243B9 /* PlacementGesturesModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementGesturesModifier.swift; sourceTree = "<group>"; };
 		EBD67BB52B78B8EB006C3886 /* GetPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD67BB92B78B8EB006C3886 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPositionApp.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6080C62B7A76C70092D51E /* DragRotationModifier.swift */,
+				EB9200822B7B93C3002243B9 /* PlacementGesturesModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				EB6080BE2B7A0DF80092D51E /* ModelDragGestureView.swift in Sources */,
 				EB6080AB2B79D0310092D51E /* DragGestureView.swift in Sources */,
 				EB6080B62B7A07A80092D51E /* SakaosanView.swift in Sources */,
+				EB9200832B7B93C3002243B9 /* PlacementGesturesModifier.swift in Sources */,
 				EB9200812B7B82DE002243B9 /* ImmersiveView.swift in Sources */,
 				EB6080D02B7B18E80092D51E /* ScalableRotateView.swift in Sources */,
 				EB6080AD2B79D0870092D51E /* HoverEffectView.swift in Sources */,
