@@ -151,7 +151,8 @@ struct AttachmentOrbitView: View {
 
         )
         .dragRotation(
-            initialPosition: Point3D([600, -1200.0, -1200]),
+//            initialPosition: Point3D([600, -1200.0, -1200]),
+            
             pitchLimit: .degrees(90)
 //            centerPosition: entityCenterPosition
         )

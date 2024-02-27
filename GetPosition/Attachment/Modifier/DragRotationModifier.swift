@@ -2,11 +2,9 @@ import SwiftUI
 import RealityKit
 
 extension View {
-    // Appleが作ったDrag用モディファイア
     /// オプションの制限付きで、エンティティをドラッグして回転できるようにします
      /// ヨーとピッチの回転について。
     func dragRotation(
-        initialPosition: Point3D = .zero,
         yawLimit: Angle? = nil,
         pitchLimit: Angle? = nil,
         sensitivity: Double = 10,
@@ -15,7 +13,6 @@ extension View {
     ) -> some View {
         self.modifier(
             DragRotationModifier(
-                initialPosition: initialPosition,
                 yawLimit: yawLimit,
                 pitchLimit: pitchLimit,
                 sensitivity: sensitivity,
@@ -28,15 +25,12 @@ extension View {
 
 /// モディファイアは、ドラッグ ジェスチャをエンティティの回転に変換します。
 private struct DragRotationModifier: ViewModifier {
-    var initialPosition: Point3D
     var yawLimit: Angle?
     var pitchLimit: Angle?
     var sensitivity: Double
     var axRotateClockwise: Bool
     var axRotateCounterClockwise: Bool
 
-    @State private var position: Point3D = .zero
-    
     @State private var baseYaw: Double = 0
     @State private var yaw: Double = 0
     @State private var basePitch: Double = 0
@@ -44,13 +38,8 @@ private struct DragRotationModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .onAppear {
-                position = initialPosition
-            }
-            .position(x: position.x, y: position.y)
-            .offset(z: position.z)
-            .rotation3DEffect(.radians(yaw == 0 ? 0.01 : yaw), axis: .y, anchor: Point3D([600, -1500.0, -1200]).toUnitPoint3D())
-            .rotation3DEffect(.radians(pitch == 0 ? 0.01 : pitch), axis: .x, anchor: Point3D([600, -1500.0, -1200]).toUnitPoint3D())
+            .rotation3DEffect(.radians(yaw == 0 ? 0.01 : yaw), axis: .y)
+            .rotation3DEffect(.radians(pitch == 0 ? 0.01 : pitch), axis: .x)
             .gesture(DragGesture(minimumDistance: 0.0)
                 .targetedToAnyEntity()
                 .onChanged { value in
@@ -138,13 +127,5 @@ private struct DragRotationModifier: ViewModifier {
 
         // 最後のスピンを見つけます。
         return base + delta * sensitivity
-    }
-}
-
-
-extension Point3D {
-    func toUnitPoint3D() -> UnitPoint3D {
-        let length = sqrt(x * x + y * y + z * z)
-        return UnitPoint3D(x: x / length, y: y / length, z: z / length)
     }
 }

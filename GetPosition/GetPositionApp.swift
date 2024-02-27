@@ -33,10 +33,10 @@ struct GetPositionApp: App {
             MagnifyGestureView()
         }.windowStyle(.automatic)
         
-        WindowGroup(id: "Sakao") {
-            SakaosanView()
-        }.windowStyle(.volumetric)
-            .defaultSize(width: 0.6, height: 1.2, depth: 0.6, in: .meters)
+//        WindowGroup(id: "Sakao") {
+//            SakaosanView()
+//        }.windowStyle(.volumetric)
+//            .defaultSize(width: 0.6, height: 1.2, depth: 0.6, in: .meters)
         
 //        WindowGroup(id: "ModelHover") {
 //            ModelHoverEffectView()
@@ -59,8 +59,8 @@ struct GetPositionApp: App {
         }.windowStyle(.volumetric)
             .defaultSize(width: 1.2, height: 1.2, depth: 1.2, in: .meters)
         
-//        ImmersiveSpace(id: "ImmersiveSpace") {
-//            SakaosanView()
-//        }.immersionStyle(selection: .constant(.mixed), in: .mixed)
+        ImmersiveSpace(id: "ImmersiveSpace") {
+            AttachmentLabelView()
+        }.immersionStyle(selection: .constant(.mixed), in: .mixed)
     }
 }

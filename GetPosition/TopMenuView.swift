@@ -61,6 +61,17 @@ struct TopMenuView: View {
                         Text("AttachmentLabel")
                     })
                 }
+                Text("Attachment")
+                    .font(.title)
+                List {
+                    Button(action: {
+                        Task {
+                            await openImmersiveSpace(id: "ImmersiveSpace")
+                        }  
+                    }, label: {
+                        Text("attachment orbit")
+                    })
+                }
             }
             .padding(.horizontal,50)
             .navigationTitle("Get Position TestApp")
