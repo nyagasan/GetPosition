@@ -11,7 +11,7 @@ struct SakaosanView: View {
         RealityView { content in
             if let entity = try? await ModelEntity(named: "Sakaosan.usdz") {
                 content.add(entity)
-                entity.scale = [0.1,0.1,0.1]
+                entity.scale = [0.5,0.5,0.5]
                 entity.position = [0, -0.05, 0]
                 let bounds = entity.model!.mesh.bounds.extents
                 entity.components.set(CollisionComponent(shapes: [.generateBox(size: bounds)]))

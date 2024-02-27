@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB4A75E42B8DAA4F00EF43B6 /* TopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A75E32B8DAA4F00EF43B6 /* TopMenuView.swift */; };
 		EB6080A92B79B9260092D51E /* Neptune.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EB6080A82B79B9260092D51E /* Neptune.usdz */; };
 		EB6080AB2B79D0310092D51E /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080AA2B79D0310092D51E /* DragGestureView.swift */; };
 		EB6080AD2B79D0870092D51E /* HoverEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6080AC2B79D0870092D51E /* HoverEffectView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB4A75E32B8DAA4F00EF43B6 /* TopMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuView.swift; sourceTree = "<group>"; };
 		EB6080A82B79B9260092D51E /* Neptune.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Neptune.usdz; path = GetPosition/Assets/Neptune.usdz; sourceTree = SOURCE_ROOT; };
 		EB6080AA2B79D0310092D51E /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		EB6080AC2B79D0870092D51E /* HoverEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverEffectView.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				EBD67BBC2B78B8EB006C3886 /* GetPositionApp.swift */,
 				EBD67BBE2B78B8EB006C3886 /* ContentView.swift */,
+				EB4A75E32B8DAA4F00EF43B6 /* TopMenuView.swift */,
 				EB9200802B7B82DE002243B9 /* ImmersiveView.swift */,
 				EB6081382B7B71610092D51E /* AttachmentAbove */,
 				EB6080C02B7A14E50092D51E /* Attachment */,
@@ -296,6 +299,7 @@
 				EB6080CB2B7A8EBD0092D51E /* DragMoveView.swift in Sources */,
 				EB60813A2B7B71B10092D51E /* AttachmentOrbitView.swift in Sources */,
 				EB92007B2B7B73AE002243B9 /* BillboardSystem.swift in Sources */,
+				EB4A75E42B8DAA4F00EF43B6 /* TopMenuView.swift in Sources */,
 				EB92007D2B7B75AB002243B9 /* BillboardComponent.swift in Sources */,
 				EB60813C2B7B71E00092D51E /* OrbitCard.swift in Sources */,
 				EBD67BCC2B78BA0C006C3886 /* GetPointView.swift in Sources */,

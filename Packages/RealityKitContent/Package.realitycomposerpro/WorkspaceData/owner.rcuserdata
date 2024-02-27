@@ -1,9 +1,10 @@
 {
-  "advancedEditorSelectedIdentifier" : "StatisticsPluginID",
+  "advancedEditorSelectedIdentifier" : "ProjectBrowser",
   "openSceneRelativePaths" : [
     "Scene.usda",
     "Materials\/GridMaterial.usda",
-    "Sakaosan.usda"
+    "Sakaosan.usda",
+    "Untitled Scene.usda"
   ],
   "recentIdentifiers" : {
     "2E3FBEA6-3AAB-4F99-8DB5-7F3FFA7B6878" : [
@@ -534,5 +535,5 @@
       }
     ]
   },
-  "selectedSceneRelativePath" : "Sakaosan.usda"
+  "selectedSceneRelativePath" : "Untitled Scene.usda"
 }

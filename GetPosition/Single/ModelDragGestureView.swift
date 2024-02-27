@@ -20,7 +20,7 @@ struct ModelDragGestureView: View {
                 entity.scale = [1,1,1]
                 let bounds = entity.model!.mesh.bounds.extents
                 let visualBoundsSize = entity.visualBounds(relativeTo: nil).size
-                let targetSize: Float = 0.6
+                let targetSize: Float = 0.1
                 let scale = targetSize / visualBoundsSize.x
                 entity.scale = SIMD3<Float>(repeating: scale)
                 entity.components.set(CollisionComponent(shapes: [.generateBox(size: bounds)]))

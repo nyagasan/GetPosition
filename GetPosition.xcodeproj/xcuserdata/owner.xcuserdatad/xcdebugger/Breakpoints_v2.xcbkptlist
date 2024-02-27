@@ -21,7 +21,7 @@
             <Locations>
                <Location
                   uuid = "2DCB2E29-6FDC-4D7D-8D9D-C238FB2ADCB5 - 8cce46e637408241"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "GetPosition.AttachmentOrbitView.body.getter : some"
@@ -36,7 +36,7 @@
                </Location>
                <Location
                   uuid = "2DCB2E29-6FDC-4D7D-8D9D-C238FB2ADCB5 - 8cce46e63740833d"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "GetPosition.AttachmentOrbitView.body.getter : some"
@@ -51,7 +51,7 @@
                </Location>
                <Location
                   uuid = "2DCB2E29-6FDC-4D7D-8D9D-C238FB2ADCB5 - 8cce46e637408592"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "GetPosition.AttachmentOrbitView.body.getter : some"
